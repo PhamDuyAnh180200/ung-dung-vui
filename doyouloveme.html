@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do u love me</title>
+    <script>
+        function yesIdo() {
+            alert('i love you too');
+        }
+        function clickde() {
+            let x = Math.random() * window.innerHeight ;
+            let y = Math.random() * window.innerWidth ;
+            document.getElementById('Khum').style.left= x + 'px';
+            document.getElementById('Khum').style.top= y + 'px';
+        }
+    </script>
+</head>
+<body>
+<h1 style="position: absolute; left: 220px; top: 175px;">Do you love me</h1>
+<input onclick="yesIdo()" type="button" value="Yes" style="position: absolute; left: 285px; top: 235px;"/>
+<input id="Khum" onmouseover="clickde()" type="button" value="No" style="position: absolute; left: 360px; top=235px;"/>
+</body>
+</html>
